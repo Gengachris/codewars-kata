@@ -20,3 +20,25 @@ function getIssuer(number) {
 }
 }
  console.log(getIssuer(4111111111111111)); 
+
+
+ function productArray(numbers){
+  //your code here
+  let result =[];
+  // The outer loop The outer loop selects which element to exclude 
+
+  for(let i =0;i<numbers.length;i++){
+     let product =1;
+    // The inner loop calculates the product of all other elements
+  for(let j=0;j<numbers.length;j++){
+    // if condition skips only when j matches i (the excluded number)
+     if(j !== i){
+       product*=numbers[j];
+}
+   
+}  
+    result.push(product); 
+}
+  return result;
+}
+console.log(productArray([2,3,4]));
