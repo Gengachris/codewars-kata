@@ -1,8 +1,4 @@
 function wordSearch(query, seq){
-  //your code here
-  const str = query.toString().toLowerCase();
-  
+ return query.filter(elem => elem.toLowerCase().includes(seq.toLowerCase()))
 }
-// function eligible(str){
-​
-// }
+console.log(wordSearch(['chris','christopher','christine','muhizi'],'muh'));
