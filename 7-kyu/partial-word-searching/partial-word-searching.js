@@ -1,4 +1,4 @@
 function wordSearch(query, seq){
- return query.filter(elem => elem.toLowerCase().includes(seq.toLowerCase()))
+ return seq.filter(elem => elem.toLowerCase().includes(query.toLowerCase()))
 }
-console.log(wordSearch(['chris','christopher','christine','muhizi'],'muh'));
+console.log(wordSearch('muh',['chris','christopher','christine','muhizi']));
